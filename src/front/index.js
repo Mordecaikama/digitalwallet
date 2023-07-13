@@ -36,26 +36,81 @@ function Index() {
         <div className='general'>
           <h2>General</h2>
           <div className='container'>
-            <i class='fa-sharp fa-solid fa-grid-horizontal'></i>
-            <i className='fa-sharp  fa-calculator'></i>
-            <i className='fa-solid fa-wallet'></i>
-            <i className='fa-solid fa-download'></i>
-            <i className='fa-solid fa-wallet'></i>
+            <a href='#'>
+              <span className='material-icons-sharp'>business</span>
+              <h5>Dashboard</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>calculate</span>
+              <h5>calculator</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>wallet</span>
+              <h5>wallet</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>savings</span>
+              <h5>Savings</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>price_change</span>
+              <h5>Wallet</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>monetization_on</span>
+              <h5>Expenses</h5>
+            </a>
           </div>
         </div>
         <div className='account'>
           <h2>Account</h2>
 
           <div className='container'>
-            <i className='fa-solid fa-fire-flame-curved'></i>
-            <i className='fa-sharp fa-pot-food'></i>
-            <i className=' fa-regular fa-notes-medical'></i>
-            <i className='fa-solid fa-user'></i>
+            <a href='#'>
+              <span className='material-icons-sharp'>
+                local_fire_department
+              </span>
+              <h5>Upcoming</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>lunch_dining</span>
+              <h5>Food</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>heart_broken</span>
+              <h5>Health</h5>
+            </a>
+            <a href='#'>
+              <span className='material-icons-sharp'>people_alt</span>
+              <h5>Account</h5>
+            </a>
           </div>
+        </div>
+
+        <div className='pro'>
+          <img src={require('../assets/images.png')} alt='proads' />
         </div>
       </div>
 
-      <main>more to main</main>
+      <main>
+        <header>
+          <div className='container'>
+            <h2>Invoice</h2>
+            <div className='invoices'>
+              <article className='invoice'>
+                <h2>$45,941</h2>
+                <span>OVERDUE</span>
+              </article>
+            </div>
+          </div>
+          <div className='container'>
+            <h2>Outstanding Revenue</h2>
+            <div className='rev'>
+              <h2>progressbar here</h2>
+            </div>
+          </div>
+        </header>
+      </main>
     </div>
   )
 }
